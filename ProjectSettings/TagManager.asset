@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Moneda
+  - SueloMuerte
+  - Enemigo
+  - Win
   layers:
   - Default
   - TransparentFX

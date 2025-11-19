@@ -72,7 +72,7 @@ public class Jugador : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.CompareTag("Moneda")
+        if (collision.transform.CompareTag("Moneda"))
         {
             FindObjectOfType<GameManager>().SumarPuntos();
             audioSource.PlayOneShot(clipMoneda);
@@ -86,7 +86,7 @@ public class Jugador : MonoBehaviour
         }
 
 
-        if (collision.transform.CompareTag("Meta"))
+        if (collision.transform.CompareTag("Win"))
         {
             SceneManager.LoadScene(2);
         }
