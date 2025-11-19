@@ -4,13 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class Jugador : MonoBehaviour
 {
-    [Header("Movimiento")]
+    [Header(" Movimiento ")]
     private float movimientoX;
     public float velocidad = 2;
     private Rigidbody2D rb2d;
 
     [Header(" Salto ")]
-    public float fuerzaSalto = 2;
+    public float fuerzaSalto = 5;
 
     [Header(" CompruebaSuelo ")]
     private bool estaEnSuelo = false;
@@ -88,7 +88,7 @@ public class Jugador : MonoBehaviour
 
         if (collision.transform.CompareTag("Win"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 
