@@ -81,7 +81,6 @@ public class Jugador : MonoBehaviour
 
         if (collision.transform.CompareTag("SueloMuerte") || collision.transform.CompareTag("Enemigo"))
         {
-            ReproducirSonidoMuerte();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
